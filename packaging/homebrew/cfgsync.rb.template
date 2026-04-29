@@ -1,0 +1,24 @@
+class Cfgsync < Formula
+  include Language::Python::Virtualenv
+
+  desc "Unified dotfile and application config manager with R2/S3 sync"
+  homepage "https://github.com/YOUR_ORG/cfgsync"
+  url "https://github.com/YOUR_ORG/cfgsync/archive/refs/tags/v0.1.0.tar.gz"
+  sha256 "REPLACE_WITH_RELEASE_SHA256"
+  license "MIT"
+
+  depends_on "python@3.12"
+
+  resource "boto3" do
+    url "https://files.pythonhosted.org/packages/REPLACE/boto3-REPLACE.tar.gz"
+    sha256 "REPLACE"
+  end
+
+  def install
+    virtualenv_install_with_resources
+  end
+
+  test do
+    system bin/"cfgsync", "--version"
+  end
+end
