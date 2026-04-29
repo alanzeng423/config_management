@@ -302,6 +302,8 @@ Homebrew support should be added as a tap formula once a release tarball exists.
 packaging/homebrew/cfgsync.rb.template
 ```
 
+Detailed PyPI and Homebrew release instructions are in [docs/publishing.md](docs/publishing.md).
+
 ## Development
 
 ```bash

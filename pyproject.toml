@@ -21,6 +21,11 @@ classifiers = [
   "Topic :: Utilities",
 ]
 
+[project.urls]
+Homepage = "https://github.com/alanzeng423/config_management"
+Repository = "https://github.com/alanzeng423/config_management"
+Issues = "https://github.com/alanzeng423/config_management/issues"
+
 [project.optional-dependencies]
 s3 = ["boto3>=1.34"]
 
