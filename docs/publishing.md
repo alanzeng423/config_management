@@ -48,7 +48,7 @@ TWINE_USERNAME=__token__ TWINE_PASSWORD=pypi-... python3 -m twine upload dist/*
 
 ## Homebrew
 
-Homebrew distribution usually needs a tap repository, for example:
+Homebrew distribution uses this tap repository:
 
 ```text
 github.com/alanzeng423/homebrew-tap

@@ -56,7 +56,12 @@ With `pipx`:
 pipx install ".[s3]"
 ```
 
-Homebrew packaging can be added by publishing a release tarball and creating a formula that installs this Python package. A starting template is available at [packaging/homebrew/cfgsync.rb.template](packaging/homebrew/cfgsync.rb.template).
+Homebrew:
+
+```bash
+brew tap alanzeng423/tap
+brew install cfgsync
+```
 
 ## Quick Start
 
@@ -296,10 +301,10 @@ Install from the wheel:
 python3 -m pip install dist/cfgsync-*.whl
 ```
 
-Homebrew support should be added as a tap formula once a release tarball exists. Start from:
+Homebrew is published through:
 
 ```text
-packaging/homebrew/cfgsync.rb.template
+https://github.com/alanzeng423/homebrew-tap
 ```
 
 Detailed PyPI and Homebrew release instructions are in [docs/publishing.md](docs/publishing.md).
